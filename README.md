@@ -15,10 +15,11 @@ This is a CRUD blog post application built with Django (backend) and React + Vit
 
 1. Navigate to the 'crud' folder containing the Django project.
 2. Create virtual environment by running `python -m venv myenv`.
-3. Activate virtual environment by running `.\myenv\Scripts\activate`
-4. Run `pip install -r requirement.txt` to install the dependencies.
-5. Run `python manage.py migrate`. 
-6. Run `python manage.py runserver` to start the backend server.
+3. Activate virtual environment by running `.\myenv\Scripts\activate` for Windows and for Linux please run `source myenv/bin/activate`.
+   [Note: in the requirement.txt file the aiohttp runs on Windows but if it is throwing any errors on Linux then it is recommended to remove it from requirements.txt and manually install it using command `python install aiohttp`...
+5. Run `pip install -r requirement.txt` to install the dependencies.
+6. Run `python manage.py migrate`. 
+7. Run `python manage.py runserver` to start the backend server.
 
 ### Frontend (React + Vite)
 
