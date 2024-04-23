@@ -1,0 +1,182 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+.App {
+    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flower-icon{
+  color: yellow;
+  font-size: 20px;
+}
+.header {
+  background-color: rgb(244, 193, 201);
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.link {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit the color from the parent */
+}
+
+/* styles for individual post  */
+.post{ 
+  padding: 10px 14px;
+  margin: 24px 26px;
+  width: 500px;
+  /* background-color: rgb(244, 244, 244); */
+  height: fit-content;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px 2px rgba(0, 0, 0, 0.1);
+}
+
+.content-detail{
+  line-height: 28px;
+  margin: 8px 0;
+}
+.post-container{
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  justify-content: center;
+  padding: 20px 10px;
+}
+
+.published{
+  color: #4c4b4b;
+  margin: 8px 0;
+}
+
+.text-ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Limit to 4 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 28px;
+  margin: 8px 0;
+}
+
+/* detail page styles  */
+.content-detail{
+   line-height: 28px;
+   text-align: justify;
+}
+
+.image-div{
+  width: 90%;
+  height: 35vh;
+  object-fit: cover;
+}
+.post-detail{
+  padding: 20px;
+}
+.custom-list-item {
+  /* counter: none; */
+  margin-bottom: 10px; /* Adjust as needed */
+  list-style: none;
+}
+
+/* button styles  */
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.create-btn {
+  background-color: #db9ebf; /* Light background color */
+  color: #333; /* Text color */
+  padding: 10px 20px; /* Padding */
+  border: none; /* Remove border */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 6px; /* Transition for background color */
+}
+
+.create-btn:hover {
+  background-color: #ccc; /* Lighter background color on hover */
+}
+
+/* create blog form styles  */
+.create-blog-form {
+  max-width: 400px;
+  margin: 14px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.create-blog-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.create-blog-form input,
+.create-blog-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+}
+
+.create-blog-form button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  background-color: #db9ebf; /* Light background color */
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.create-blog-form button:hover {
+  background-color: rgb(232, 188, 194);
+}
+
+/* loading spinner  */
+.spinner-icon {
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.trash {
+  border: none;
+  color: rgb(251, 78, 107);
+  font-size: 1rem;
+  transition: transform 0.6s ease-in-out;
+  cursor: pointer;
+}
+
+.delete-button {
+  border: none;
+}
+
+.trash:hover {
+  transform: rotate(360deg);
+}
