@@ -15,7 +15,7 @@ This is a CRUD blog post application built with Django (backend) and React + Vit
 
 1. Navigate to the 'crud' folder containing the Django project.
 2. Create virtual environment by running `python -m venv myenv`.
-3. Activate virtual environment by running `source myenv/bin/activate`
+3. Activate virtual environment by running `.\myenv\Scripts\activate`
 4. Run `pip install -r requirement.txt` to install the dependencies.
 5. Run `python manage.py migrate`. 
 6. Run `python manage.py runserver` to start the backend server.
