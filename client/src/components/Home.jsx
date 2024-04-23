@@ -3,11 +3,12 @@ import { IoMdFlower } from 'react-icons/io';
 import axios from 'axios';
 import Post from './Post';
 import CreateBlogForm from './CreateBlogForm';
+import process from 'process'
 
 function Home() {
   const [postData, setPostData] = useState(null);
   const [showForm, setShowForm] = useState(false);
-
+ 
   useEffect(() => {
     async function fetchBlogPost() {
       try {
